@@ -6,6 +6,14 @@ A Solana vault program built with Rust and Anchor as part of the Turbin3 prerequ
 
 Extend the vault's withdrawal instruction to invoke the Turbin3 registration program through a Cross-Program Invocation (CPI), registering the developer's GitHub username on-chain.
 
+## Architecture
+
+The program is built with Anchor and Rust on Solana. It supports vault initialization, SOL deposits, withdrawals, and closure.
+
+During withdrawal, the program transfers SOL to the user and invokes the Turbin3 registration program through a Cross-Program Invocation (CPI) to register the GitHub username.
+
+![Pre-Req Vault Architecture](images/vault-architecture.png)
+
 ## Features
 
 - Initialize a vault.
